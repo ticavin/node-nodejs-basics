@@ -1,3 +1,4 @@
 export const parseArgs = () => {
-    // Write your code here 
+    const args = process.argv.slice(2);
+    
 };
