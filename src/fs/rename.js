@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 
 export const renameFile = async () => {
     try {
-        await rename(`${dirname(__filename)}/files/wrongFilename.txt`, `${_dirname(__filename)}/files/properFilename.md`);
+        await rename(`${dirname(__filename)}/files/wrongFilename.txt`, `${dirname(__filename)}/files/properFilename.md`);
     }
     catch {
         throw new Error('rename failed');
